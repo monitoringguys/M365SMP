@@ -7,13 +7,13 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 12/14/2021
 
--Updated Services Library to leverage GraphAPI and updated endpoints for M365 Services
--Detailed Services Incident Alerting, added Critical, Warning, and Informational Alert Rules
--Performance Based Alerting for MailFlow, Teams, Sharepoint Online, and OneDrive
--Console Task for Mailbox CleanUp and Performance Collection Rules
--OnDemand Discovery included for ultra fast setup
--Updated Console tasks for Password Change, SPO Site Discovery, Teams Chat, Calendar and Channel Messages
--Teams Service Model Update, including monitors for Calendar, Presence and Chat
--PowerBI Dashboard providing easy to consume indicators for IT staff and Leadership!
+- Updated Services Library to leverage GraphAPI and updated endpoints for M365 Services
+- Detailed Services Incident Alerting, added Critical, Warning, and Informational Alert Rules
+- Performance Based Alerting for MailFlow, Teams, Sharepoint Online, and OneDrive
+- Console Task for Mailbox CleanUp and Performance Collection Rules
+- OnDemand Discovery included for ultra fast setup
+- Updated Console tasks for Password Change, SPO Site Discovery, Teams Chat, Calendar and Channel Messages
+- Teams Service Model Update, including monitors for Calendar, Presence and Chat
+- PowerBI Dashboard providing easy to consume indicators for IT staff and Leadership!
 
 
