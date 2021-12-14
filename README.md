@@ -3,7 +3,7 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 ## [Download Here][Download]
 
-[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv1/M365.Supplemental.MP-V1.zip
+[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv2/M365.Supplemental.MP-V2.zip
 
 3/11/2021
 - Mail Flow updated to 1.0.1.2
