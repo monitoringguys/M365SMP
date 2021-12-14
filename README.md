@@ -5,7 +5,6 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 [Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv1/M365.Supplemental.MP-V1.zip
 
-## Updated release
 3/11/2021
 - Mail Flow updated to 1.0.1.2
   The mailflow parameters were interchanged (sender/receiver) for that one hybrid workflow.
