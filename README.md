@@ -3,17 +3,19 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 ## [Download Here][Download]
 
-[Download]: (https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.zip)
+[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.zip
+
 
 3/11/2023
 
-Added Teams Network Assessment Tool and MP, provides an additional layer to our already comprehensive Teams monitoring!
-Teams NAT: Updated PacketLossRate to PacketLossRatePercent for rule and monitor
-Agent Proxy Task – Allows to Set Proxy independently
-Fixed Counter name for Verify Chat Duration performance rule
-Updated Mailflow cleanup rule defaults: Interval: 43400->3600, MaxToDelete: 500-1000
-Added ability to control the size of test file for OneDrive and SharePoint Online synthetic transactions, added orphaned file cleanup routine.
-Added auto cleanup of incident messages for M365 Services, added incident number to incident alert names.
-Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
+- Added Teams Network Assessment Tool and MP, provides an additional layer to our already comprehensive Teams monitoring!
+- Teams NAT: Updated PacketLossRate to PacketLossRatePercent for rule and monitor
+- Agent Proxy Task – Allows to Set Proxy independently
+- Fixed Counter name for Verify Chat Duration performance rule
+- Updated Mailflow cleanup rule defaults: Interval: 43400->3600, MaxToDelete: 500-1000
+- Added ability to control the size of test file for OneDrive and SharePoint Online synthetic transactions, added orphaned file cleanup routine.
+- Added auto cleanup of incident messages for M365 Services, added incident number to incident alert names.
+- Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
+
 
 
