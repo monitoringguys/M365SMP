@@ -11,6 +11,7 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 - Added ability to control the size of test file for OneDrive and SharePoint Online synthetic transactions, added orphaned file cleanup routine.
 - Added auto cleanup of incident messages for M365 Services, added incident number to incident alert names.
 - Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
+- Updated PowerBI Template providing easy to consume indicators for IT staff and Leadership! (requires min PowerBI Desktop ver 2.110.805.0) 
 
 
 ## [Download Here][Download]
