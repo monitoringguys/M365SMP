@@ -1,11 +1,6 @@
 # M365SMP - M365 Services Supplemental Monitoring Management Pack 
 The M365 Supplemental Management Pack includes synthetic transactions that provide an increased level of visibility into the health and performance of the Microsoft 365 environment making it the perfect companion to the M365 Admin Portal. The synthetic transactions will be executed from a local point-of-presence (Watcher Node) within the customer network for a comprehensive view of service availability and performance.  
 
-## [Download Here][Download]
-
-[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.zip
-
-
 3/11/2023
 
 - Added Teams Network Assessment Tool and MP, provides an additional layer to our already comprehensive Teams monitoring!
@@ -18,4 +13,6 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 - Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
 
 
+## [Download Here][Download]
 
+[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.zip
