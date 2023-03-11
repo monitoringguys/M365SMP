@@ -3,17 +3,17 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 ## [Download Here][Download]
 
-[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv2/M365.Supplemental.MP-V2.zip
+[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv2/M365.Supplemental.MP-V3.zip
 
-12/14/2021
+3/11/2023
 
-- Updated Services Library to leverage GraphAPI and updated endpoints for M365 Services
-- Detailed Services Incident Alerting, added Critical, Warning, and Informational Alert Rules
-- Performance Based Alerting for MailFlow, Teams, Sharepoint Online, and OneDrive
-- Console Task for Mailbox CleanUp and Performance Collection Rules
-- OnDemand Discovery included for ultra fast setup
-- Updated Console tasks for Password Change, SPO Site Discovery, Teams Chat, Calendar and Channel Messages
-- Teams Service Model Update, including monitors for Calendar, Presence and Chat
-- PowerBI Dashboard providing easy to consume indicators for IT staff and Leadership!
+Added Teams Network Assessment Tool and MP, provides an additional layer to our already comprehensive Teams monitoring!
+Teams NAT: Updated PacketLossRate to PacketLossRatePercent for rule and monitor
+Agent Proxy Task – Allows to Set Proxy independently
+Fixed Counter name for Verify Chat Duration performance rule
+Updated Mailflow cleanup rule defaults: Interval: 43400->3600, MaxToDelete: 500-1000
+Added ability to control the size of test file for OneDrive and SharePoint Online synthetic transactions, added orphaned file cleanup routine.
+Added auto cleanup of incident messages for M365 Services, added incident number to incident alert names.
+Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
 
 
