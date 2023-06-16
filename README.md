@@ -8,13 +8,13 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
  - Hardcoded synctime vars for all MPs to help disperse requests to Graph.
  - Changed all configuration tasks IntervalSeconds from $TargetHost property to LEAVE_BLANK_TO_INHERIT_DEFAULT_VALUE
  - Corrected numerous monitor Category tags. Many performance monitors were set as default AvailabilityHealth; updated to PerformanceHealth.
- - Added additional rules and monitors for Licenses
-      Added rules:
-            M365 License - Licenses Consumed (Units) Performance Collection Rule
-            M365 License - Licenses Available (%) Performance Collection Rule
-      Added monitors:
-            M365 License - Licenses Consumed (Units) Monitor
-            M365 License - Licenses Available (Units) Monitor
+ - Added additional rules and monitors for Licenses  
+      Added rules:  
+            M365 License - Licenses Consumed (Units) Performance Collection Rule  
+            M365 License - Licenses Available (%) Performance Collection Rule  
+      Added monitors:  
+            M365 License - Licenses Consumed (Units) Monitor  
+            M365 License - Licenses Available (Units) Monitor  
 - Library, Services, License: Password/ClientSecret Decode and Get-StandardToken functions log critical failures and exit immediately
       Updated: M365 <namespace> - Script Resource Library Failure Repeated Event Detection Monitor
             TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$
