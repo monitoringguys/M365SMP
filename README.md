@@ -1,17 +1,31 @@
 # M365SMP - M365 Services Supplemental Monitoring Management Pack 
 The M365 Supplemental Management Pack includes synthetic transactions that provide an increased level of visibility into the health and performance of the Microsoft 365 environment making it the perfect companion to the M365 Admin Portal. The synthetic transactions will be executed from a local point-of-presence (Watcher Node) within the customer network for a comprehensive view of service availability and performance.  
 
-3/11/2023
-
-- Added Teams Network Assessment Tool and MP, provides an additional layer to our already comprehensive Teams monitoring!
-- Teams NAT: Updated PacketLossRate to PacketLossRatePercent for rule and monitor
-- Agent Proxy Task – Allows to Set Proxy independently
-- Fixed Counter name for Verify Chat Duration performance rule
-- Updated Mailflow cleanup rule defaults: Interval: 43400->3600, MaxToDelete: 500-1000
-- Added ability to control the size of test file for OneDrive and SharePoint Online synthetic transactions, added orphaned file cleanup routine.
-- Added auto cleanup of incident messages for M365 Services, added incident number to incident alert names.
-- Fixed DirectoryPercentConsumed/DirectoryPercentFree calculations for the M365 Organizational monitor.
-- Updated PowerBI Template providing easy to consume indicators for IT staff and Leadership! (requires min PowerBI Desktop ver 2.110.805.0) 
+6/16/2023
+- Improved cleanup routine; added SentItems, added delay between delete operations. Set interval to 86400. Increased MaxItemsToDelete. 
+ - Added OnDemand discovery for all m365 class types to the Watcher node "modify configuration" task.
+ - Added throttling logic into M365Library.ps1
+ - Hardcoded synctime vars for all MPs to help disperse requests to Graph.
+ - Changed all configuration tasks IntervalSeconds from $TargetHost property to LEAVE_BLANK_TO_INHERIT_DEFAULT_VALUE
+ - Corrected numerous monitor Category tags. Many performance monitors were set as default AvailabilityHealth; updated to PerformanceHealth.
+ - Added additional rules and monitors for Licenses
+      Added rules:
+            M365 License - Licenses Consumed (Units) Performance Collection Rule
+            M365 License - Licenses Available (%) Performance Collection Rule
+      Added monitors:
+            M365 License - Licenses Consumed (Units) Monitor
+            M365 License - Licenses Available (Units) Monitor
+- Library, Services, License: Password/ClientSecret Decode and Get-StandardToken functions log critical failures and exit immediately
+      Updated: M365 <namespace> - Script Resource Library Failure Repeated Event Detection Monitor
+            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$
+      Updated: M365 <namespace> - Script Failure Repeated Event Detection Monitor
+            <RepeatedRegExEventDisplayNumber>999[5-6]|999[8-9]</RepeatedRegExEventDisplayNumber>
+            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$
+      Added: M365 <namespace> - AuthToken Retrieval Failure Repeated Event Detection Monitor
+ - SharePoint, OneDrive: Changed AlertOn from Error to Warning for performance unit monitors.
+ - Teams: added TNAT discovery GUID to the "Modify Teams Config" agent task OnDemandDiscovery.
+ - SharePoint: Fixed duplicate name issue. Graph has been known to return duplicate identical site entries.
+ - Updated a few knowledge articles. Improved a couple class DisplayNames.
 
 
 ## [Download Here][Download]
