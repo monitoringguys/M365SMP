@@ -15,13 +15,13 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
       Added monitors:  
             M365 License - Licenses Consumed (Units) Monitor  
             M365 License - Licenses Available (Units) Monitor  
-- Library, Services, License: Password/ClientSecret Decode and Get-StandardToken functions log critical failures and exit immediately
-      Updated: M365 <namespace> - Script Resource Library Failure Repeated Event Detection Monitor
-            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$
-      Updated: M365 <namespace> - Script Failure Repeated Event Detection Monitor
-            <RepeatedRegExEventDisplayNumber>999[5-6]|999[8-9]</RepeatedRegExEventDisplayNumber>
-            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$
-      Added: M365 <namespace> - AuthToken Retrieval Failure Repeated Event Detection Monitor
+- Library, Services, License: Password/ClientSecret Decode and Get-StandardToken functions log critical failures and exit immediately  
+      Updated: M365 <namespace> - Script Resource Library Failure Repeated Event Detection Monitor  
+            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$  
+      Updated: M365 <namespace> - Script Failure Repeated Event Detection Monitor  
+            <RepeatedRegExEventDisplayNumber>999[5-6]|999[8-9]</RepeatedRegExEventDisplayNumber>  
+            TimerResetSeconds, old:3600, new:$Target/Property.../IntervalSeconds$  
+      Added: M365 <namespace> - AuthToken Retrieval Failure Repeated Event Detection Monitor  
  - SharePoint, OneDrive: Changed AlertOn from Error to Warning for performance unit monitors.
  - Teams: added TNAT discovery GUID to the "Modify Teams Config" agent task OnDemandDiscovery.
  - SharePoint: Fixed duplicate name issue. Graph has been known to return duplicate identical site entries.
