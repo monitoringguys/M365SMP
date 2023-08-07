@@ -1,6 +1,12 @@
 # M365 Services Supplemental Monitoring Management Pack 
 The M365 Supplemental Management Pack includes synthetic transactions that provide an increased level of visibility into the health and performance of the Microsoft 365 environment making it the perfect companion to the M365 Admin Portal. The synthetic transactions will be executed from a local point-of-presence (Watcher Node) within the customer network for a comprehensive view of service availability and performance.  
 
+8/7/2023
+3.0.1.5
+- Improved Get-AccessToken and Get-StandardToken logging. Fixed Services workflows auth token request. 
+- M365ST.TeamsMon.ps1 - Moved the $RequestDelayMS before the stopwatch timer in Verification section.
+- M365ST.TeamsCalendarMon.ps1 - **Added
+  
 6/16/2023
 - Improved cleanup routine; added SentItems, added delay between delete operations. Set interval to 86400. Increased MaxItemsToDelete. 
  - Added OnDemand discovery for all m365 class types to the Watcher node "modify configuration" task.
