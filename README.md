@@ -1,6 +1,14 @@
 # M365 Services Supplemental Monitoring Management Pack 
 The M365 Supplemental Management Pack includes synthetic transactions that provide an increased level of visibility into the health and performance of the Microsoft 365 environment making it the perfect companion to the M365 Admin Portal. The synthetic transactions will be executed from a local point-of-presence (Watcher Node) within the customer network for a comprehensive view of service availability and performance.  
 
+12/7/2023
+3.0.1.28
+- Fixed ModifyWatcherConfig ondemanddiscovery target name; correctly triggers WatcherNode discovery now.
+- Added logic to rename existing config file if it exists and check for .exe bits before installation attempt.
+- Added logic to identify and parse optional JSON UPN/SMTPEmailAddress from Sender/Receiver strings
+- Updated function M365Receive to retrieve from specific folder: Inbox.
+- Improved Get-AccessToken and Get-StandardToken logging. Fixed Services workflows auth token request
+
 8/7/2023 <br>
 3.0.1.5
 - Improved Get-AccessToken and Get-StandardToken logging. Fixed Services workflows auth token request. 
