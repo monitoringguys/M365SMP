@@ -10,7 +10,7 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 - Watcher node configuration (new/modify): Improved on-demand discovery; Fixed ModifyWatcherConfig on-demand discovery target name; correctly triggers WatcherNode discovery now.
 - License: Updated license sku display names.
 - Teams Calendar: Updated the Delete logic (which really, strangely only cancelled the event) to a 'Cancel' which actually cancels the event AND "The action moves the event to the Deleted Items folder."
-Cancel: https://learn.microsoft.com/en-us/graph/api/event-cancel?view=graph-rest-1.0&tabs=http
+Cancel: https://learn.microsoft.com/en-us/graph/api/event-cancel?view=graph-rest-1.0&tabs=http <br>
 Delete: https://learn.microsoft.com/en-us/graph/api/event-delete?view=graph-rest-1.0&tabs=http
 
 8/7/2023 <br>
