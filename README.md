@@ -36,4 +36,4 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 ## [Download Here][Download]
 
-[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.0.1.5.zip
+[Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.0.1.28.zip
