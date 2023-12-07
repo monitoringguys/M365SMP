@@ -3,11 +3,15 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 
 12/7/2023 <br>
 3.0.1.28
-- Fixed ModifyWatcherConfig ondemanddiscovery target name; correctly triggers WatcherNode discovery now.
-- Added logic to rename existing config file if it exists and check for .exe bits before installation attempt.
-- Added logic to identify and parse optional JSON UPN/SMTPEmailAddress from Sender/Receiver strings
-- Updated function M365Receive to retrieve from specific folder: Inbox.
-- Improved Get-AccessToken and Get-StandardToken logging. Fixed Services workflows auth token request
+- Improved error handling and logging for throttling scenarios.
+- ExchangeOnline: Added logic to identify and parse optional JSON UPN/SMTPEmailAddress from Sender/Receiver email address values in Exchange watcher config. In rare circumstances the UPN may differ from the SMTPEmailAddress for an account. Email address fields now accept optional JSON object in the following format: {"UPN":  "account@domain.name","EmailAddress":  "email@domain.name"}
+- ExchangeOnline: Updated function M365Receive to retrieve from specific folder: Inbox. Improved reliability of test message receipt metrics.
+- Teams Network Assessment Tool: Upon installation/reinstallation of TNAT, added logic to preserve (rename) existing config file if it exists.
+- Watcher node configuration (new/modify): Improved on-demand discovery; Fixed ModifyWatcherConfig on-demand discovery target name; correctly triggers WatcherNode discovery now.
+- License: Updated license sku display names.
+- Teams Calendar: Updated the Delete logic (which really, strangely only cancelled the event) to a 'Cancel' which actually cancels the event AND "The action moves the event to the Deleted Items folder."
+Cancel: https://learn.microsoft.com/en-us/graph/api/event-cancel?view=graph-rest-1.0&tabs=http
+Delete: https://learn.microsoft.com/en-us/graph/api/event-delete?view=graph-rest-1.0&tabs=http
 
 8/7/2023 <br>
 3.0.1.5
