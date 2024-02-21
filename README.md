@@ -9,8 +9,7 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 - M365ST.TeamsCalendarMon.ps1 - Fixed small error in testing branch statement which was causing a benign but annoying error.
 - Minor updates/edits to Management Pack Guide
 
-## [Download Here][Download] <br>
-
+## [Download Here][Download] 
 [Download]: https://github.com/monitoringguys/M365SMP/releases/download/M365SMPv3/M365.Supplemental.MP-V3.0.1.33.zip 
 
 
