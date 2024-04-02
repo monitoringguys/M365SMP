@@ -5,9 +5,6 @@ The M365 Supplemental Management Pack includes synthetic transactions that provi
 3.0.1.34
 - Small issue with License workflows (monitoring and perf) were broken 
 - Updated PowerBI Template 
-
-2/21/2024 <br>
-3.0.1.33
 - Library: Improved exception handling in Invoke-WebRequest. Reduced $ThrottlingRequestDelaySec from 5 to 1.5. 
 - License: Improved exception handling on Get-StandardToken failure.
 - WebRequest_ThrottlingImprovement branch created
